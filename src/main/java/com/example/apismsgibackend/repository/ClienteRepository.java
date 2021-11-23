@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ClienteRepository extends  JpaRepository<Cliente,Long> ,JpaSpecificationExecutor<Cliente> {
+    Boolean existsClientesById(Long id);
 }
 
