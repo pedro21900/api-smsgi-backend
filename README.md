@@ -23,7 +23,7 @@ Modelos para testar ultilizando o médotos HTTP,pPode ser feito através do Post
 
 ou
 
-**Passo 2 :** : Pelo Swagger disponivél no endpoint http://localhost:8080/swagger-ui/index.html
+**Passo 2 :** Pelo Swagger disponivél no endpoint http://localhost:8080/swagger-ui/index.html
 
 
 Endpoint **Cliente :** http://localhost:8080/api/cliente
