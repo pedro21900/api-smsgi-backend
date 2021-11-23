@@ -1,4 +1,4 @@
-FROM maven:3.6-jdk-17 AS api-smsgi-backend
+FROM maven:3.6-jdk-8 AS api-smsgi-backend
 
 RUN mkdir -p ./home/api-smsgi-backend
 
@@ -6,7 +6,7 @@ WORKDIR ./home/api-smsgi-backend
 
 COPY / .
 
-RUN  mvn package
+RUN mvn dependency:tree && mvn clean install && mvn package
 
 FROM adoptopenjdk/openjdk11:alpine-jre
 
