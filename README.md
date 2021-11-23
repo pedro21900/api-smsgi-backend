@@ -10,9 +10,9 @@ Para testar a aplicação Local:
 
 **Passo 1 :** para teste local em docker ultilize o comandos:
 
-`docker build -t image-venda .`
+**Passo 1.1 :** criando imagem docker com o comando : `docker build -t image-venda .`
 
-`docker run -p 8000:8000 --name api-smsgi-backend image-venda`
+**Passo 1.2 :** iniciando o contâiner : `docker run -p 8080:8080 --name api-smsgi-backend image-venda`
 ### Teste de Api
 
 Agora é só testar os endpoints .
