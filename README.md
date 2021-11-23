@@ -12,9 +12,16 @@ ou
 
 `docker run -p 8000:8000 --name api-smsgi-backend image-venda`
 
+
 Agora é só testar os endpoints .
 
 Modelos para testar ultilizando o médotos HTTP:
+Pode ser feito através do Postman
+
+ou
+
+Pelo Swagger disponivél no endpoint `http://localhost:8080/swagger-ui/index.html`
+
 
 Endpoint **Cliente :**
 `http://localhost:8080/api/cliente`

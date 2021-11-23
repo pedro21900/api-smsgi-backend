@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-smsgi-backend" target="17" />
+      <module name="api-smsgi-backend" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
