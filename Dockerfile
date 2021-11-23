@@ -6,7 +6,7 @@ WORKDIR ./home/api-smsgi-backend
 
 COPY / .
 
-RUN mvn dependency:tree && mvn package
+RUN  mvn package
 
 FROM adoptopenjdk/openjdk11:alpine-jre
 
