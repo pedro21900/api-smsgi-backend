@@ -1,6 +1,6 @@
 package com.example.apismsgibackend.rest;
 
-import com.example.apismsgibackend.domain.dto.Impl.ClienteMappingDTOImpl;
+import com.example.apismsgibackend.domain.dto.impl.ClienteMappingDTOImpl;
 import com.example.apismsgibackend.domain.dto.ClienteDTO;
 import com.example.apismsgibackend.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//Implementar erro 404 getById e parâmetros de busca usando Page
 @RestController
 @RequestMapping("/api/cliente")
 public class ClienteRestController {

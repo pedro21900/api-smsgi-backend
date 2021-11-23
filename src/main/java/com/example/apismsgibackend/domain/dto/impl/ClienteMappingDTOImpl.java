@@ -1,6 +1,6 @@
-package com.example.apismsgibackend.domain.dto.Impl;
+package com.example.apismsgibackend.domain.dto.impl;
 
-import com.example.apismsgibackend.domain.dto.Mapping.ClienteMappingDTO;
+import com.example.apismsgibackend.domain.dto.mapping.ClienteMappingDTO;
 import com.example.apismsgibackend.domain.Cliente;
 import com.example.apismsgibackend.domain.dto.ClienteDTO;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
-package com.example.apismsgibackend.domain.dto.Impl;
+package com.example.apismsgibackend.domain.dto.impl;
 
-import com.example.apismsgibackend.domain.dto.Mapping.ProdutoMappingDTO;
+import com.example.apismsgibackend.domain.dto.mapping.ProdutoMappingDTO;
 import com.example.apismsgibackend.domain.Produto;
 import com.example.apismsgibackend.domain.dto.ProdutoDTO;
 import org.springframework.stereotype.Component;

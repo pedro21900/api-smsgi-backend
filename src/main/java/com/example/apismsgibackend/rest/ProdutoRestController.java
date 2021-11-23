@@ -1,6 +1,6 @@
 package com.example.apismsgibackend.rest;
 
-import com.example.apismsgibackend.domain.dto.Impl.ProdutoMappingDTOImpl;
+import com.example.apismsgibackend.domain.dto.impl.ProdutoMappingDTOImpl;
 import com.example.apismsgibackend.domain.dto.ProdutoDTO;
 import com.example.apismsgibackend.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//Implementar erro 404 getById e parâmetros de busca usando Page
 @RestController
 @RequestMapping("/api/produto")
 public class ProdutoRestController {
@@ -19,7 +18,6 @@ public class ProdutoRestController {
     private ProdutoRepository produtoRepository;
     @Autowired
     private ProdutoMappingDTOImpl produtoMappingDTOImpl;
-
 
     @GetMapping
     public ResponseEntity<List<ProdutoDTO>> getAll() {
@@ -69,8 +67,10 @@ public class ProdutoRestController {
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
-        if (produtoRepository.existsProdutoById(id)) {
-            produtoRepository.deleteById(id);
+        if (produtoRepository
+                .existsProdutoById(id)) {
+            produtoRepository
+                    .deleteById(id);
         } else {
             new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }

@@ -1,4 +1,4 @@
-package com.example.apismsgibackend.domain.dto.Mapping;
+package com.example.apismsgibackend.domain.dto.mapping;
 
 import com.example.apismsgibackend.domain.Venda;
 import com.example.apismsgibackend.domain.dto.VendaDTO;

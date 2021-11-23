@@ -1,6 +1,6 @@
 package com.example.apismsgibackend.rest;
 
-import com.example.apismsgibackend.domain.dto.Impl.VendaMappingDTOImpl;
+import com.example.apismsgibackend.domain.dto.impl.VendaMappingDTOImpl;
 import com.example.apismsgibackend.domain.dto.VendaDTO;
 import com.example.apismsgibackend.repository.VendaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +34,7 @@ public class VendaRestController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<VendaDTO> getById(@PathVariable() Long id)  {
+    public ResponseEntity<VendaDTO> getById(@PathVariable() Long id) {
         if (vendaRepository.existsVendaById(id)) {
             return ResponseEntity
                     .ok(vendaMappingDTOImpl
