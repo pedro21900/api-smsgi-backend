@@ -1,30 +1,32 @@
 # Teste smsgi-Backend
 
+## Teste Local
+
 Para testar a aplicação Local:
 
 **Passo 1 :** Ultilize o comando `mvn spring-boot:run`
 
-ou
+## Teste com Docker
 
-**Passo2 :** para teste local em docker ultilize o comandos:
+**Passo 1 :** para teste local em docker ultilize o comandos:
 
 `docker build -t image-venda .`
 
 `docker run -p 8000:8000 --name api-smsgi-backend image-venda`
-
+### Teste de Api
 
 Agora é só testar os endpoints .
 
-Modelos para testar ultilizando o médotos HTTP:
-Pode ser feito através do Postman
+Modelos para testar ultilizando o médotos HTTP,pPode ser feito através do Postman.
+
+**Passo 2 :** Usando o software [Postman](https://www.postman.com/downloads/)
 
 ou
 
-Pelo Swagger disponivél no endpoint `http://localhost:8080/swagger-ui/index.html`
+**Passo 2 :** : Pelo Swagger disponivél no endpoint http://localhost:8080/swagger-ui/index.html
 
 
-Endpoint **Cliente :**
-`http://localhost:8080/api/cliente`
+Endpoint **Cliente :** http://localhost:8080/api/cliente
 
 ```json
 {
@@ -33,8 +35,7 @@ Endpoint **Cliente :**
 }
 ```
 
-Endpoint **Produto :**
-`http://localhost:8080/api/produto`
+Endpoint **Produto :** http://localhost:8080/api/produto
 
 ```json
  {
@@ -43,9 +44,7 @@ Endpoint **Produto :**
 }
 ````
 
-Endpoint Venda:
-
-`http://localhost:8080/api/venda`
+Endpoint Venda: http://localhost:8080/api/venda
 
 **Lembrando que por seguranção não serão adicionados clientes e nem produtos em venda será nescessário usar o endpoint
 de venda e produto para persistir os dados**
