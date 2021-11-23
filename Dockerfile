@@ -1,4 +1,4 @@
-FROM maven:3.6-jdk-8 AS api-smsgi-backend
+FROM maven:3.6-jdk-17 AS api-smsgi-backend
 
 RUN mkdir -p ./home/api-smsgi-backend
 
